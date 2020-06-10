@@ -1,41 +1,15 @@
-
-    <details class=" btn btn-info" >
-        <summary>
-           Configuration
-        </summary>
-        <div  >
-            <div class="form-check"> 
-                <input class="form-check-input" type="checkbox" [(ngModel)]="dconf.allowBack" id="gridCheck1">
-                <label class="form-check-label" for="gridCheck1">
-                  AllowBack
-                </label>
-             </div>
-           
-             <div class="form-check">
-                <input class="form-check-input" [(ngModel)]="dconf.allowReview"  type="checkbox" id="gridCheck1">
-                <label class="form-check-label" for="gridCheck1">
-                  AllowReview
-                </label>
-             </div>
-             <div class="form-check">
-                <input class="form-check-input" [(ngModel)]="dconf.autoMove"  type="checkbox" id="autoMove">
-                <label class="form-check-label" for="autoMove">
-                    autoMove
-                </label>
-             </div>
-
-             <div class="form-check">
-               <label class="form-text-label" for="duration">
-                  duration
-              </label>
-                <input class="form-text-input" [(ngModel)]="dconf.allowReview"  type="number" min="10" step="5" id="duration">
-                
-             </div>
-
-
-
-             
-            </div>
-    </details>
-
-
+,
+    "config":{
+    "allowBack": false,
+    "allowReview": false,
+    "autoMove": false,  
+    "duration": 30, 
+    "pageSize": 10,
+    "requiredAll": true, 
+    "richText": false,
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "showClock": true,
+    "showPager": true,
+    "theme": "asp"
+    }
