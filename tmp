@@ -1,0 +1,14 @@
+<div class="quiz">
+    <h1>{{quiz.name}}</h1>
+    <h4>{{quiz.description}}</h4>
+    <div *ngFor="let q of quiz.questions; index as i">
+        <div *ngIf="page==i">
+     <app-question [question]="q"  ></app-question>
+     <div >
+        <button (click)="goTo(page-1)" [hidden]="v" >preview</button>
+        <button (click)="goTo(page+1)" [hidden]="page==quiz.questions.length-1">next</button> 
+    </div>
+    </div>
+    
+     </div>
+</div>
